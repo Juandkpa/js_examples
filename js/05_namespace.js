@@ -35,3 +35,11 @@ MIAPLICACION.metodoComun = {
   
   // Sintaxis de utilización del método addListener:
   MIAPLICACION.event.addListener("turel", "tipo", callback);
+
+  function Persona(primerNombre) {
+    this.primerNombre = primerNombre;
+  }
+  
+Persona.prototype.diHola = function() {
+  alert ('Hola, Soy ' + this.primerNombre);
+};
